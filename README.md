@@ -4,16 +4,15 @@ Análise de partidas de xadrez usando a API do chess.com — coleta, limpeza e i
 
 ---
 
-## O que esse projeto faz
-
-Coleta automaticamente todas as partidas do usuário **raizeraaa** via API pública do chess.com, estrutura os dados em um DataFrame e gera análises sobre padrões de jogo.
-
 ## Principais descobertas
 
-- **Tilt confirmado** — acurácia cai de 73% para 60% após a primeira derrota do dia
-- **Melhor abertura** — Indian Game com 90% de vitória em 10+ partidas
-- **Performance por cor** — brancas 51.4% vs pretas 47.7%
-- **4076 partidas** coletadas entre 2022 e 2026
+- Precisão cai de 73% para 60% após a primeira derrota do dia
+- Melhor abertura — Defesa Indiana: 9 vitórias em 10 partidas
+- Defesa Francesa e Gambito da Dama Recusado — 80% de vitória em 15 partidas cada
+- Performance por cor — brancas 51.4% vs pretas 47.7%
+- 4.076 partidas analisadas entre março/2022 e abril/2026
+
+---
 
 ## Tecnologias
 
@@ -28,7 +27,7 @@ Coleta automaticamente todas as partidas do usuário **raizeraaa** via API públ
 |---|---|
 | `01_coleta_chesscom.ipynb` | Coleta via API chess.com |
 | `02_parsing_pgn.ipynb` | Parsing e estruturação dos dados |
-| `03_analise_profunda.ipynb` | Tilt detection, aberturas e tempo |
+| `03_analise_profunda.ipynb` | Análise de padrões e sequências |
 | `04_dashboard.ipynb` | Visualizações e gráficos |
 
 ## Como executar
